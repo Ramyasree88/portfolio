@@ -446,8 +446,9 @@ form.addEventListener('submit',e=>{
   if(ok){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);form.reset();}
 });
 
-document.getElementById('downloadBtn').addEventListener('click',e=>{e.preventDefault();alert('Resume download will be available soon!');});
-document.getElementById('yr').textContent=new Date().getFullYear();
+<a href="resume.pdf" download id="downloadBtn" class="btn">
+    Download Resume
+</a>
 </script>
 </body>
 </html>
